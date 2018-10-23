@@ -1463,32 +1463,6 @@ $(function () { (function ($R, $$, $)
                     $R.cc__reformat__extra.$relatedNotes = $('#relatedNotes');
                 })();
                 
-                //  account footer
-                (function ()
-                {
-                    var _html__account_footer = '' +
-                        '<div id="accountFooter__separator" class="separator">' +
-                            '<div class="separatorLine setTextColorAsBackgroundColor"></div>' +
-                            '<div class="separatorLabel setBackgroundColor">' +
-                                '<div id="accountFooter__logo"></div>' +
-                            '</div>' +
-                        '</div>' +
-                        '<div id="accountFooter__text">' + $R.translate('footer__text') + '</div>' +
-                        '<a id="accountFooter__button" href="#" title="' + $R.translate('footer__button') + '">' + $R.translate('footer__button') + '</a>' +
-                    '';
-                    
-                    //  create
-                    var _div = $R.cc__reformat.document.createElement('div');
-                        _div.setAttribute('id', 'accountFooter');
-                        _div.className = 'separateSection';
-                        _div.innerHTML = _html__account_footer;
-                    
-                    //  append
-                    $R.cc__reformat.iframeDocument.getElementById('text').appendChild(_div);
-                    
-                    //  add to extra
-                    $R.cc__reformat__extra.$accountFooter = $('#accountFooter');
-                })();
             };
         
         
